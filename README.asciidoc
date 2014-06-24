@@ -1,0 +1,22 @@
+Maven Java Formatter Plugin
+===========================
+
+== Usage
+
+Add the following to your maven build plugins.
+
+```XML
+<plugin>
+	<groupId>nz.co.aetheric.maven</groupId>
+	<artifactId>plugin-formatter-java</artifactId>
+	<version>1.1.0</version>
+</plugin>
+```
+
+=== Config
+
+By default, the plugin binds to the `validate` lifecycle.
+
+sourceDir::
+	The directory to scan for source files.
+	Defaults to `${project.build.sourceDirectory}`.
